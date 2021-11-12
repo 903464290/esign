@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="contractstyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script type="text/javascript" src="js/pdf.js"></script>
+ 
+
+    
+</head>
+
+<div id="contract">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">E-sign</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Contract template
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="employment_contract.html">Employment</a></li>
+                <li><a class="dropdown-item" href="car_contract.html">Renting cars</a></li>
+                <li><a class="dropdown-item" href="shop_lease.html">Renting shops</a></li>
+                <li><a class="dropdown-item" href="house.html">Renting places to live</a></li>
+              </ul>
+            </li>
+
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                IOU template
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="iou.html">IOU&Letter of Guarantee</a></li>
+                <li><a class="dropdown-item" href="repayment.html">Proof of Repayment</a></li>
+
+                </ul>
+            </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Receipt template
+            </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="deposit.html">Deposit Receipt</a></li>
+                    <li><a class="dropdown-item" href="item.html">Item Receipt</a></li>
+                    <li><a class="dropdown-item" href="payment_receipt.html">Payment Receipt</a></li>
+                    <li><a class="dropdown-item" href="bill.html">Bill of Exchange Receipt</a></li>
+                  </ul>
+              </ul>
+            </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+   
+      
+<body>
+  <button id="download"> Download PDF</button>
+  <div id="content">
+   <h2> Vehicle rent contract</h2>
+   <strong>Lessor (hereinafter referred to as party A) :</strong>  <br>
+   Name: <input type="text" id="name" name="name" required><br>
+   residence: <input type="text"><br>
+   ID number: <input type="text"><br>
+   Contact: <input type="tel" id="phone" name="phone"
+   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+   required><br>
+   E-mail:<input type="email" id="email" name="email" required><br><br>
+
+<strong>Lessee (hereinafter referred to as party B) : </strong><br>
+Name: <input type="text" id="name" name="name" required><br>
+residence: <input type="text"><br>
+ID number: <input type="text"><br>
+Contact: <input type="tel" id="phone" name="phone"
+pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+required><br>
+E-mail:<input type="email" id="email" name="email" required><br><br>
+For the convenience of Party B’s work, Party A agrees to lend its own vehicles to Party B for use.
+According to this, the  parties, A and B  have negotiated and signed the following contract for the use of vehicles:
+<br><br>
+<strong>1. The basic situation of borrowed vehicles</strong>
+The loaned vehicle is owned by Party A, the model is <input type="text">:, the engine number is <input type="text">, 
+and the license plate number is <input type="text"><br>
+Party A guarantees that the car has complete procedures, complete certificates, 
+good technical conditions, and full ownership of the car.<br><br>
+<strong>2. Vehicle loan and cost</strong><br>
+Party A agrees to lend the vehicle to Party B for use at the cost of GBP <input type="text"> per day.<br>
+The deposit is GBP <input type="text"><br><br>
+<strong>3. Vehicle loan period<br></strong>
+The borrowing period of Party B is from (year month day) to (year month day).<br><br>
+<strong>4. Party A’s Responsibilities<br></strong>
+Party A is responsible for handling the procedures for the annual vehicle inspection.<br><br>
+<strong>5. Party B's responsibilities<br></strong>
+1. Bear all violation fines related to borrowed vehicles.<br>
+2. To bear the responsibility for compensation for accidents caused by borrowed vehicles and the 
+expenses required for accident handling.<br>
+3. To bear other expenses related to the borrowed vehicle although this contract is not clear.<br><br>
+<strong>6. Safety management<br></strong>
+1. Party B must abide by traffic laws, regularly maintain the vehicle, and be tested as required; 
+if the vehicle has not been tested or does not meet the safe driving regulations, Party A has the right 
+to take back the borrowed vehicle.<br>
+2. Party B must take out compulsory liability insurance for motor vehicle traffic accidents and 
+third party liability insurance for the vehicle, and the third party liability insurance shall have 
+an insured amount of not less than 1,000 pound. In the event of a traffic accident, the insurance 
+company shall bear the insufficiency of the claims, and Party A shall not bear any responsibility.<br><br>
+<strong>7. Other<br></strong>
+1. Party A does not charge any borrowing fees from Party B.<br>
+2. For any reason, if Party B resigns from Party C, this contract will be terminated and Party B shall 
+return the vehicle to Party A. If it is not returned within the time limit, Party A shall be compensated 
+for losses in yuan per day.<br>
+3. This contract is in triplicate, with each party holding one copy, with the same legal effect.<br><br>
+ 
+<a href="sign.html">Party A (signature): </a> <br>
+Contact:<br>
+Signing Date:<input type="date" value="2021-01-01"><br><br>
+
+<a href="sign.html">Party B (signature): </a> <br>
+Contact:<br>
+Signing Date:<input type="date" value="2021-01-01"><br><br>
+
+</div>
+</body>
+
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="contractstyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script type="text/javascript" src="js/pdf.js"></script>
+    <script type="text/javascript" src="js/show.js"></script>
+
+    <body onload="javascript:window.alert('法律风险规避条款')">
+    </body>
+  
+
+    
+</head>
+
+<div id="contract">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">E-sign</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Contract template
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="employment_contract.html">Employment</a></li>
+                <li><a class="dropdown-item" href="car_contract.html">Renting cars</a></li>
+                <li><a class="dropdown-item" href="shop_lease.html">Renting shops</a></li>
+                <li><a class="dropdown-item" href="house.html">Renting places to live</a></li>
+              </ul>
+            </li>
+
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                IOU template
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="iou.html">IOU&Letter of Guarantee</a></li>
+                <li><a class="dropdown-item" href="repayment.html">Proof of Repayment</a></li>
+
+                </ul>
+            </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Receipt template
+            </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="deposit.html">Deposit Receipt</a></li>
+                    <li><a class="dropdown-item" href="item.html">Item Receipt</a></li>
+                    <li><a class="dropdown-item" href="payment_receipt.html">Payment Receipt</a></li>
+                    <li><a class="dropdown-item" href="bill.html">Bill of Exchange Receipt</a></li>
+                  </ul>
+              </ul>
+            </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+   
+      
+    <body>
+      <button id="download"> Download PDF</button>
+      <div id="content">
+        <h2>Employment Contract </h1>  
+       
+        <strong>1.  Party A (Employer)</strong>  <br>
+Name: <input type="text" id="name" name="name" required><br>
+residence: <input type="text" id="name" name="name" required><br>
+Legal representative (main person in charge):<input type="text" id="name" name="name" required> <br>
+Contact: <input type="tel" id="phone" name="phone" 
+pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+required><br>
+E-mail: <input type="email" id="email" name="email" required><br><br>
+
+<strong>2.Party B (employee) </strong><br>
+Name: <input type="text" id="name" name="name" required><br>
+Gender:
+<div>
+  <input type="checkbox" id="Female" name="Female"
+         checked>
+  <label for="Female">Female</label>
+</div>
+
+<div>
+  <input type="checkbox" id="Male" name="Male"
+         checked>
+  <label for="Male">Male</label>
+</div>
+
+
+<div>
+  <input type="checkbox" id="Prefer not to say" name="Prefer not to say"
+         checked>
+  <label for="Prefer not to say">Prefer not to say</label>
+</div>
+
+<br>
+Passport number: <input type="text" id="passport" name="passport" required><br>
+Passport Scan: <br>
+<label for="avatar">Choose Your File:</label>
+<input type="file"
+       id="avatar" name="avatar"
+       accept="image/png, .pdf, image/jpeg"><br> 
+
+Residence address: <input type="text" id="address" name="address" required><br>
+Current address: <input type="text" id="address" name="address" required><br>
+Contact number: <input type="tel" id="phone" name="phone"
+pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+required><br><br>
+
+<strong>Both parties agree to sign this contract.</strong><br><br>
+
+ <strong>3. Job details</strong><br>
+ Job title: <input type="text" id="job" name="job" required> <br>
+ Brief description of the job<br>
+ [Note: use either A or B.]<br>
+ A. A brief description of your work is: <input type="text" id="job" name="job" required>.<br>
+ B. Your responsibilities are set out in the job description attached to this statement.<br>
+[Optional:] Your job description may be amended by us and, in addition to duties set out in the job description, you may be required to undertake additional or other reasonable duties as necessary to meet the needs of our business.<br><br>
+
+<strong>4. Working hours </strong> </strong><br>
+Your normal working days and hours are <input type="text" id="job" name="job" required>. with a daily [paid or unpaid] lunch break of<input type="text" id="job" name="job" required>. [depending on pro rata hours agreed].<br><br>
+
+<strong>5. Holiday entitlement </strong></strong>
+[Note: an employer must give enough information to make sure that entitlements, including accrued holiday pay on termination, can be precisely calculated.]<br>
+Your holiday entitlement is <input type="text" id="job" name="job" required>.<br>
+Variable hours or days of work [optional]<br>
+Your [hours of work and/or days of work] may change. [Set out how the employee’s hours of work and/or days of work can vary and how, for example if it’s weekly or monthly].<br>
+
+
+Both parties agree to determine the contract period according to the first method below.<br>
+1. There is a fixed time limit: from year, month and day to year, month and day.<br>
+2. No fixed period: starting from year, month and day.<br>
+3. The deadline is to complete a certain task: from year, month, day to the completion of the task.<br>
+4. The trial period is:<br><br>
+
+<strong>6. Absence and Sick Pay</strong><br>
+If you’re absent for work for any reason, you must [inform <input type="text" id="name" name="name" required>. by telephone] as soon as possible, but no later than<input type="text" id="job" name="job" required>.<br>
+For absences of 7 days or less, you can self-certify. <br>
+[Optional:] On your return to work you must complete and return a self-certification form to your manager. This must be returned before the end of your first day back at work. <br>
+For absences of 7 days or more because of sickness or injury, you must get a [doctor's certificate or fit note].<br>
+All sickness or injury absences will be added to your employment record.<br>
+<strong>Sick Pay<br></strong>
+[Note: use either or both options.]<br>
+A. You may be entitled to be paid if you’re not able to work due to sickness or injury (‘incapacity’).  [Give terms of pay as set out in Statutory Sick Pay guidance or in the organisation’s sick pay terms for employees].<br>
+B. You may be eligible for contractual sick pay. [Give terms of contractual sick pay].<br><br>
+
+<strong>7. Other paid leave</strong><br>
+[Note: use A, B and C.]<br>
+A. You may be eligible for statutory paid leave, including <input type="text" id="job" name="job" required>.<br>
+[Note: the employer must state terms and conditions relating to statutory paid leave, including:<br>
+•	maternity leave<br>
+•	adoption leave<br>
+•	paternity leave<br>
+•	Shared Parental Leave<br>
+•	time off for dependants<br>
+•	bereavement leave]<br>
+B. You may be eligible for additional paid leave, including <input type="text" id="job" name="job" required>. <br>
+[Note: the employer must state terms and conditions relating to any additional paid leave, for example:<br>
+•	compassionate leave<br>
+•	sabbatical leave<br>
+•	training and study leave]<br>
+[Note： Further information can be found in the respective policies, which are available [give details on where and how employees can access policies].<br><br>
+
+<strong>8. Notice period <br></strong>
+[Note: use A if an employee has different notice periods during and after their probationary period. Use B if the notice periods during and after probation are the same or if there is not a probationary period.] <br>
+
+A. During your probationary period, the notice that you or your employer must give to end your employment is <input type="number"> weeks. <br>
+After your probationary period, the notice that you must give to end your employment is <input type="number"> weeks.<br>
+We may end your employment at any time by giving you [specify notice period in weeks] or the statutory notice you’re entitled to, whichever is longer.<br>
+B. The notice you must give to end your employment is <input type="number"> weeks. <br>
+We may end your employment at any time by giving you <input type="number"> weeks or the statutory notice you’re entitled to, whichever is longer.<br><br>
+
+<strong>9. Other matters that both parties think need to be agreed upon:<br></strong><br>
+                
+<strong>10. Matters not covered in this contract shall be implemented in accordance with current laws and regulations. This contract is in duplicate, with each party holding one copy.</strong><br><br>
+ 
+<a href="jSignature/index.php">Party A (signature): </a> <br>
+
+
+<script type="text/javascript">
+  function imgPreview(fileDom){
+      //判断是否支持FileReader
+      if (window.FileReader) {
+          var reader = new FileReader();
+      } else {
+          alert("您的设备不支持图片预览功能，如需该功能请升级您的设备！");
+      }
+
+      //获取文件
+      var file = fileDom.files[0];
+      var imageType = /^image\//;
+      //是否是图片
+      if (!imageType.test(file.type)) {
+          alert("请选择图片！");
+          return;
+      }
+      //读取完成
+      reader.onload = function(e) {
+          //获取图片dom
+          var img = document.getElementById("preview");
+          //图片路径设置为读取的图片
+          img.src = e.target.result;
+      };
+      reader.readAsDataURL(file);
+  }
+</script>
+<body>
+  <img id="preview" />
+  <br />
+  <input type="file" name="file" onchange="imgPreview(this)" />
+</body>
+
+    
+
+Signing Date:<input type="date" value="2021-01-01"><br><br>
+<a href="jSignature/2/index.php">Party B (signature): </a> <br>
+
+
+Signing Date:<input type="date" value="2021-01-01"><br><br>
+
+
+<input class="button" type="button" value="Submit">
+
+
+</script>
+
+
+</div>
+
+    
+</body>
+</html>

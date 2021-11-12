@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900");
+
+
+html,
+body {
+  font-size: 16px;
+  color: #8486a6;
+  font-family: "Lato", sans-serif;
+  vertical-align: baseline;
+  line-height: 26px;
+  font-weight: 400;
+  overflow-x:hidden;
+
+  background:white;
+
+}
+
+.link {text-align: center;
+  }
+
+
+
+#contract {text-align: left;
+  
+  color: black; 
+margin-bottom: 200px;
+margin-left: 200px;
+margin-right: 200px; 
+margin-top:10px;
+border:2px solid black;}
+  
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 26px;
+  font-weight: 600;
+}
+
+
+/***Typography***/
+h1 {
+  font-size: 36px;
+  color: #1f58b1;
+  background:#10122d;
+  position:relative;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+table, th, td {
+  border:1px solid silver;
+}
+
+input {
+  border:1px；
+
+}
+
+
+#canvas {
+  border :2px solid white;}
+
+

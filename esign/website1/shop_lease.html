@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="contractstyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script type="text/javascript" src="js/pdf.js"></script>
+
+
+    
+</head>
+
+<div id="contract">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">E-sign</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Contract template
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="employment_contract.html">Employment</a></li>
+                <li><a class="dropdown-item" href="car_contract.html">Renting cars</a></li>
+                <li><a class="dropdown-item" href="shop_lease.html">Renting shops</a></li>
+                <li><a class="dropdown-item" href="house.html">Renting places to live</a></li>
+              </ul>
+            </li>
+
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                IOU template
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="iou.html">IOU&Letter of Guarantee</a></li>
+                <li><a class="dropdown-item" href="repayment.html">Proof of Repayment</a></li>
+
+                </ul>
+            </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Receipt template
+            </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="deposit.html">Deposit Receipt</a></li>
+                    <li><a class="dropdown-item" href="item.html">Item Receipt</a></li>
+                    <li><a class="dropdown-item" href="payment_receipt.html">Payment Receipt</a></li>
+                    <li><a class="dropdown-item" href="bill.html">Bill of Exchange Receipt</a></li>
+                  </ul>
+              </ul>
+            </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+   
+  <button id="download"> Download PDF</button>
+  <div id="content">
+
+   <h2>Shop Lease Contract</h2> <br>
+
+<strong>PARTIES</strong><br>
+<strong>Lessor (hereinafter referred to as party A) :</strong>  <br>
+Name: <input type="text" id="name" name="name" required><br>
+residence: <input type="text"><br>
+ID number: <input type="text"><br>
+Contact: <input type="tel" id="phone" name="phone"
+pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+required><br>
+E-mail:<input type="email" id="email" name="email" required><br><br>
+
+<strong>Lessee (hereinafter referred to as party B) : </strong><br>
+Name: <input type="text" id="name" name="name" required><br>
+residence: <input type="text"><br>
+ID number: <input type="text"><br>
+Contact: <input type="tel" id="phone" name="phone"
+pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+required><br>
+E-mail:<input type="email" id="email" name="email" required><br><br>
+The Lessor and Lessee are each referred to herein as a “Party,” and collectively known as the “Parties.”<br><br>
+
+<strong>TERMS AND CONDITIONS</strong><br>
+ 
+Both parties A and B have signed this contract for mutual compliance after equal and voluntary consultation.<br>
+<br>
+<strong>Article 1. Projects and Shops</strong> <br>
+1.1 Project name: <input type="text"><br>
+1.2 Project address: <input type="text"><br>
+1.3 Renting purpose: <input type="text"><br>   
+1.4 Room number: <input type="text"><br>
+1.5 Building area: <input type="text"> square meters<br><br>
+
+<strong>Article 2. Rental Conditions</strong><br>
+2.1 Party B confirms that: before both parties A and B sign this contract for the scheduled lease 
+of the shop Statute) and other relevant laws and regulations. Party B has fully understood the basic 
+conditions of the houses listed in Article 1 of this lease contract (including house orientation, 
+plane structure, bay size, surrounding environment and supporting facilities, etc.). Party A has 
+clearly informed Party B of all expenses. Party B clearly has no objections to the foregoing matters.<br>
+
+2.2 This contract for the scheduled lease of a shop (hereinafter referred to as the fixed-lease contract)
+ must be signed by the actual tenant. After Party B signs this fixed-lease contract, it means that 
+ Party B has confirmed the lease of the house.<br>
+2.3 The name of Party B confirmed in this rental contract should be consistent with the "House Rental 
+Contract" (including supplementary agreements and property service attachments, the same below).<br>
+
+2.4 Party B confirms: Party B has read all the terms of this contract, and at the request of Party B,
+ Party A has made the corresponding terms and conditions. Party B has fully understood and fully 
+ understood the meaning of these terms and the corresponding legal consequences.<br><br>
+
+<strong>Article 3. Deposit, Rent and Payment method</strong><br>
+3.1 Deposit: After signing this fixed-lease contract, Party B shall pay Party A the rental deposit of
+ GBP <input type="text">, which shall be paid in a lump sum within <input type="text"> working day after signing this
+  fixed-lease contract .<br>
+
+3.2 lease period: from <input type="date" value="2021-01-01"> (dd/mm/yyyy) to <input type="date" value="2021-01-01"> (dd/mm/yyyy) only.<br>
+                     
+
+3.3 Rent and property service fees: subject to the "House Lease Contract" signed by both parties.
+ The "House Lease Contract" is priced based on the building area, and the final building area is 
+ subject to the surveying and mapping report.<br>
+3.4 After both parties sign the "House Lease Contract", the deposit is automatically transferred to 
+the performance bond or part of the rent (depending on the amount of the performance bond in the "House
+ Lease Contract").<br>
+3.5 Payment method: <input type="text"><br><br>
+            
+
+<strong>Article 4. Sublet<br></strong>
+
+4.1 Party B cannot transfer its rights and obligations to a third party after signing this fixed-lease 
+contract, nor can it share corresponding rights and obligations with any third party.<br>
+
+4.2 After the "House Lease Contract" is formally signed, during the lease term, if Party B needs to 
+sublet the leased house due to Party B's business needs, Party B must notify Party A in writing and 
+obtain Party A's written consent before subletting.<br><br>
+
+<strong>Article 5. Obligations to conclude this agreement<br></strong>
+5.1 Party B must be within one working day before the delivery (the delivery time is subject to the 
+notice of Party A. Party A can issue the notice by telephone, text message, posted announcement by the
+ sales department, fax, letter, local media newspaper announcement or online media announcement) ),
+  bring the original lease contract, original deposit receipt, original ID card/business license and
+   other materials to Party A’s project location to sign the “House Rental Contract” and its annexes,
+    “Property Service Attachments” (including the “Property Services Provisional Agreement”) 
+    ( (Hereinafter collectively referred to as: "lease contract"), and pay the amount payable at the 
+    same time.    <br><br>
+
+    <strong>Article 6. Liability for breach of contract<br></strong>
+6.1 If Party B pays the deposit overdue, Party A shall have the right to terminate this agreement and 
+request Party B to pay a one-time compensation of GBP 1,000 for the liquidated damages .    <br>
+
+6.2 If Party B violates Article 4.1 of this contract, Party A has the right to terminate this contract
+ without refunding the deposit paid by Party B. <br>
+
+6.3 If Party B abandons the lease of the house after signing this contract, or fails to sign the
+ "House Lease Contract" at the location of Party A’s project within the time agreed upon in the
+  contract, it shall be deemed that Party B has breached the contract, and Party A shall have the 
+  right to terminate the lease If the house is rented out separately, the deposit paid by Party B will
+   not be returned; if Party A rents out the house rented by Party B to a third party within the time
+    agreed in the contract, it will be a breach of contract by Party A and Party A shall double the 
+    deposit paid by Party B. <br>
+
+6.4 Party B shall not refuse to sign the "House Rental Contract" and its annexes, and 
+"Property Service Annexes" (including the "Provisional Owners Agreement") on the grounds that the terms 
+of the contract cannot be agreed. The deposit paid by Party B is not refundable. <br>
+6.5 If required by Party A's overall business planning, Party A has the right to adjust the business
+ format and store number reserved by Party B, which is not a breach of contract by Party A. If Party 
+ B disagrees with the adjustment, Party A has the right to terminate this contract and refund the
+  deposit paid by Party B without interest. <br>
+
+6.6 Party B promises that at the time of signing this contract, it has fully understood the processing
+ conditions, procedures and all the fees that need to be paid for the commercial housing, and promises 
+ that if it is unable to perform the contract due to its own reasons, it is a breach of contract. <br>
+
+6.7 The parties confirm that they will no longer bear other responsibilities except for the deposit 
+responsibilities as stipulated in this contract. <br><br>
+
+<strong>Article 7. Force Majeure <br></strong>
+7.1 Definition of force majeure: refers to all events that occur after the signing of this contract, 
+cannot be foreseen when this contract is signed, whose occurrence and consequences cannot be avoided or 
+overcome, and prevent any party from performing all or part of the contract. The aforementioned events 
+include earthquakes, typhoons, floods, fires, wars, international or domestic transportation
+ interruptions, epidemics, strikes, and other events that are considered force majeure under English
+ laws or general international business practices. One party's lack of funds must be a force majeure
+  event.<br>
+
+7.2 Before the signing of the "House Lease Contract" by both parties, in the event of the aforementioned
+ force majeure, Party A has the right to terminate this fixed-lease contract. If Party A terminates 
+ this fixed-lease contract, it shall return the deposit paid by Party B interest-free within working
+  days of the cancellation of this fixed-lease contract , and shall no longer bear other responsibilities. <br>
+
+  <br>
+<strong>Article 8. Contact Information of Contract<br></strong>
+8.1 In order to better perform this contract, both parties provide the following contact information:<br>
+<strong>(1) Party A's contact information<br></strong>
+Mailing address: <input type="text" id="name" name="name" required><br>       
+Contact: <input type="text" id="name" name="name" required><br>  
+telephone: <input type="text" id="name" name="name" required><br>    
+E-mail: <input type="text" id="name" name="name" required><br><br>
+
+<strong>(2) Party B's contact information<br></strong>
+Mailing address: <input type="text" id="name" name="name" required><br>  
+Contact: <input type="text" id="name" name="name" required><br>
+telephone: <input type="text" id="name" name="name" required><br>
+E-mail: <input type="text" id="name" name="name" required><br> 
+8.2 The correspondence address and contact information filled in by Party A and Party B in this
+rental contract are true and valid. The notice sent by one party by express mail shall be regarded as
+ the date of delivery after the date of delivery; if there is any change, it should be written in 
+ writing within days after the change Notify the other party in the form of notification, otherwise
+  the notification sent to the original mailing address shall be deemed to have been delivered.  <br>      
+  <br>
+<strong>Article 9. Supplementary Provisions<br></strong>
+9.1 Contract is made in two copies, the parties each hold a part, it has the same legal effect. 
+It will take effect from the date of signing and sealing by both parties.    <br>
+9.2 This rental contract will automatically become invalid after the "House Rental Contract" is
+ signed, and it will be withdrawn by Party A.<br><br>
+<strong>SIGNING<br></strong>
+ 
+<a href="sign.html">Party A (signature): </a> <br>
+Legal representative or authorized representative (signature):<br>
+Signing Date: <input type="date" value="2021-01-01"><br><br>
+
+<a href="sign.html">Party B (signature): </a> <br>
+Legal representative or authorized representative (signature):<br>
+Signing Date: <input type="date" value="2021-01-01"><br><br>
+
+</div>

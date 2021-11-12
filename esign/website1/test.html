@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script src="./jsignature.js"></script>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>签名</title>
+</head>
+
+<body>
+        <div id="signature"></div>
+        <br>
+
+
+        
+        <button type="button" class="btn btn-primary btn-block" id="save">保存</button>
+        <button type="button" class="btn btn-default btn-block" id="clear">清除</button>
+        这里是保存后图片:
+        <img class="img" src="" alt="">
+    <script type="text/javascript">
+        var param = {
+            width: '100%', //签名区域的宽
+            height: '300px', //签名区域的高
+            cssclass: 'zx11', //画布的类 可以写自定义的样式
+            UndoButton: true, //撤销按钮的状态 这个按钮的样式修改要去jSignature.js文件中去找
+            signatureLine: false, //去除默认画布上那条横线
+            lineWidth: '10' //画笔的大小
+        };
+        $("#signature").jSignature(param);
+
+        //jSignature提供了清除的API reset
+        $('#clear').click(function () {
+            $("#signature").jSignature("reset");
+        });
+
+        //提交
+        $('#save').click(function () {
+            if ($("#signature").jSignature('getData', 'native').length === 0) {
+                alert("请签名后再提交！");
+                return;
+            }
+            //将签名的画布保存为base64编码字符串 默认是png的
+            var datapair = $("#signature").jSignature("getData", "image");
+            var i = new Image();
+            i.src = "data:" + datapair[0] + "," + datapair[1];
+            console.log(i.src);
+            $('.img').attr('src',i.src)
+        })
+    </script>
+</body>
+
+</html>```
+

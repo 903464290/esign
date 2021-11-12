@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="contractstyle.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script type="text/javascript" src="js/pdf.js"></script>
+ 
+
+    
+</head>
+
+<div id="contract">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">E-sign</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Contract template
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="employment_contract.html">Employment</a></li>
+                <li><a class="dropdown-item" href="car_contract.html">Renting cars</a></li>
+                <li><a class="dropdown-item" href="shop_lease.html">Renting shops</a></li>
+                <li><a class="dropdown-item" href="house.html">Renting places to live</a></li>
+              </ul>
+            </li>
+
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                IOU template
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="iou.html">IOU&Letter of Guarantee</a></li>
+                <li><a class="dropdown-item" href="repayment.html">Proof of Repayment</a></li>
+
+                </ul>
+            </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Receipt template
+            </a>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="deposit.html">Deposit Receipt</a></li>
+                    <li><a class="dropdown-item" href="item.html">Item Receipt</a></li>
+                    <li><a class="dropdown-item" href="payment_receipt.html">Payment Receipt</a></li>
+                    <li><a class="dropdown-item" href="bill.html">Bill of Exchange Receipt</a></li>
+                  </ul>
+              </ul>
+            </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+   
+      
+    <body>
+      <button id="download"> Download PDF</button>
+      <div id="content">
+        <h2>Renting Place to Live Contract </h1>  
+       
+        <strong>Lessor (hereinafter referred to as party A) :</strong>  <br>
+        
+ <form action="word.php" method="post">
+    Name: <input type="text" id="name" name="namea" required><br>
+    ID number: <input type="text " id="ID" name="ida" required><br>
+    E-mail:<input type="email" id="email" name="emaila" required><br><br>
+
+    <strong>Lessee (hereinafter referred to as party B) : </strong><br>
+    Name: <input type="text" id="name" name="nameb" required><br>
+    ID number: <input type="text" id="ID" name="idb" required><br>
+    E-mail:<input type="email" id="emailb" name="emailb" required><br><br>
+
+
+    In accordance with relevant laws, decrees and pertinent rules and regulations, party A and party B have reached an agreement through friendly consultation to conclude the following contract.<br><br>
+
+    <strong>1. Location of the premises</strong><br>
+    Party A will lease to party B the premises and attached facilities all owned by party a itself, which is located at <input type="text" name="address"> and in good condition.<br><br>
+
+    <strong>2. Size of the premises</strong> </strong><br>
+    The registered size of the leased premises is <input type="text" name="size"> square meters.<br><br>
+
+    <strong>3. Lease term</strong></strong><br>
+    The lease term will be from <input type="date" value="2021-01-01" name="date1">（dd/mm/yyyy） to <input type="date" value="2021-01-01" name="date2">（dd/mm/yyyy） party A will clear the premises and provide it to party B for use before <input type="date" value="2021-01-01" name="date3">（dd/mm/yyyy）<br><br>
+
+
+    <strong>4. Rental</strong></strong><br>
+    4.1 Amount: the rental will be <input type="text" name="rental"> per month. party B will pay the rental to party A in the form of bank transfer.<br>
+    4.2 Payment of rental will be one installment every 6 months. The first installment will be paid within 1 month after signing the contract. Party B will pay the rental before using the premises and attached facilities （in case party B pays the rental in the form of remittance, the date of remitting will be the day of payment and the remittance fee will be borne by the remitter.）. Party A will issue a written receipt after receiving the payment.<br>
+    4.3 In case the rental is more than ten working days overdue, party B will pay 10% of monthly rental as overdue fine every day, if the rental be paid 15 days overdue, party B will be deemed to have withdrawn from the premises and breach the contract. in this situation, party A has the right to take back the premises and take actions against party B's breach.<br><br>
+
+    <strong>5. Deposit</strong></strong><br>
+    5.1 Guarantying the safety and good conditions of the premises and attached facilities and account of relevant fees are settled on schedule during the lease term, party B will pay GBP 500 to party A as a deposit before <input type="date" value="2021-01-01" name="date4">（dd/mm/yyyy）,  party A will issue a written receipt after receiving the deposit.<br>
+    5.2 Unless otherwise provided for by this contract, party A will return full amount of the deposit without interest on the day when this contract expires and party B clears the premises and has paid all due rental and other expenses. <br>
+    5.3 In case party B breaches this contract, party A has right to deduct the default fine, compensation for damage or any other expenses from the deposit. In case the deposit is not sufficient to cover such items, party B should pay the insufficiency within ten days after receiving the written notice of payment from party A. <br><br>
+
+    <strong>6. Obligations of Party A</strong><br>
+    6.1 Party A will provide the premises and attached facilities (see the appendix of furniture list for detail) on schedule to party b for using. <br>
+    6.2 In case the premise and attached facilities are damaged by quality problems, natural damages or disasters, party a will be responsible to repair and pay the relevant expenses. <br>
+    6.3 Party a will guarantee the lease right of the premises. Otherwise, party A will be responsible to compensate party B's losses. <br><br>
+
+
+    <strong>7. Obligations of Party B</strong><br>
+    7.1 Party B will pay the rental, the deposit and other expenses on time. <br>
+    7.2 Party B may decorate the premises and add new facilities with party A's approval. when this contract expires, party B may take away the added facilities which are removable without changing the good conditions of the premises for normal use. <br>
+    7.3 Party B will not transfer the lease of the premises or sublet it without party a's approval and should take good care of the premises. Otherwise, party b will be responsible to compensate any damages of the premises and attached facilities caused by its fault and negligence. <br>
+    7.4 Party B will use the premises lawfully according to this contract without changing the nature of the premises and storing hazardous materials in it. Otherwise, party b will be responsible for the damages caused by it. <br>
+    7.5 Party B will bear the cost of utilities such as communications, water, electricity, gas, management fee etc. on time during the lease term. <br><br>
+
+
+    <strong>8. ermination and dissolution of the contract <br></strong>
+    8.1 Within two months before the contract expires, party B will notify party A if it intends to extend the leasehold. in this situation, two parties will discuss matters over the extension. <br>
+    8.2 When the lease term expires, party B will return the premises and attached facilities to party a within days. any belongings left in it without party A's previous understanding will be deemed to be abandoned by party B. in this situation, party A has the right to dispose of it and party a will raise no objection. <br>
+    8.3 This contract will be effective after being signed by both parties. any party has no right to terminate this contract without another party's agreement. anything not covered in this contract will be discussed separately by both parties. <br><br>
+
+
+    <strong>9. Breach of the contract<br></strong>
+    9.1 During the lease term, any party who fails to fulfill any article of this contract without the other party's understanding will be deemed to breach the contract. both parties agree that the default fine will be 3 months rental charge. in case the default fine is not sufficient to cover the loss suffered by the faultless party, the party in breach should pay additional compensation to the other party. <br>
+    9.2 Both parties will solve the disputes arising from execution of the contract or in connection with the contract through friendly consultation. in case the agreement cannot be reached, any party may summit the dispute to the court that has the jurisdiction over the matter. <br><br>
+               
+    <strong>10. Miscellaneous</strong><br>
+    10.1 Any annex is the integral part of this contract. the annex and this contract are equally valid. <br>
+    10.2 There are 2 originals of this contract. each party will hold 1 original. <br>
+    10.3 Other special terms will be listed bellows：<input type="text" name="other"><br><br><br><br><br>
+    
+ 
+
+**Click the button below to automatically jump to the signature page, please double check the above content is correct and confirm**<br>
+ <input type="submit" name="submit" value="Submit">
+
+
+</form>
+
+</body>
+</html>

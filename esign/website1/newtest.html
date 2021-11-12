@@ -1,0 +1,11 @@
+<body οnlοad="getSeverTime();" >     //放到body里面让浏览器加载时运行
+<p id="servertime"></p>        //把这个放在要显示的地方
+</body>
+
+<p id="labTime">     
+	<script type="text/javascript">
+		//取客户端时间
+		setInterval("labTime.innerText=new Date().toLocaleString()", 1000) //每1000毫秒(即1秒) 执行一次本段代码
+	</script>
+</p>
+
