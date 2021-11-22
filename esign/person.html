@@ -7,6 +7,7 @@
 <title>Home</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript " src ="https://unpkg.com/bsv@0.30.0/bsv.min.js"></script>
 <!-- Place favicon.ico in the root directory -->
 <!-- all css here -->
 <!-- bootstrap v3.3.6 css -->
@@ -19,6 +20,7 @@
 <link rel="stylesheet" href="css/meanmenu.min.css">
 <!-- owl.carousel css -->
 <link rel="stylesheet" href="css/owl.carousel.min.css">
+
 <!-- bxslider css -->
 <!--flaticon css -->
 <link rel="stylesheet" href="css/flaticon.css">
@@ -61,9 +63,6 @@
 								<li><a href="2">Features</a></li>
 								<li><a href="3">Project</a></li>
 								<li><a href="4">Steps</a></li>
-								<li><a href="5">Road Map</a></li>
-								<li><a href="6">Tokens</a></li>
-								<li><a href="7">News</a></li>
 							</ul>
 						</nav>
 						<div class="language">
@@ -73,8 +72,8 @@
 								<li><img src="images/icons/12.png" alt="" /></li>
 							</ul>
 						</div>
-						<div class="personal_page-btn">
-							<a href=" "personal_page class="btn2"><i class="fa fa-user"></i><span>Personal page</span></a>
+						<div class="login-btn">
+							<a href="login/login.html" class="btn1"><i class="fa fa-user"></i><span>Login</span></a>
 						</div>
 					</div>
 					<!-- mobile menu area start -->
@@ -114,9 +113,6 @@
 									<li><a href="2">Features</a></li>
 									<li><a href="3">Project</a></li>
 									<li><a href="4">Steps</a></li>
-									<li><a href="5">Road Map</a></li>
-									<li><a href="6">Tokens</a></li>
-									<li><a href="7">News</a></li>
 								</ul>
 							</div>
 						</div>
@@ -150,8 +146,8 @@
 											</ul>
 											<h2 data-animation="animated bounceInLeft">E-sign your first <br>electronic contract</h2>
 											<div class="buttons">
-												<a href="#" class="btn2" data-animation="animated bounceInUp">signature</a>
-												<a href="/login/login.html" class="btn2" data-animation="animated bounceInUp">login</a>
+												<a href="/website1/house.html" class="btn2" data-animation="animated bounceInUp">signature</a>
+												<a href="index.html" class="btn2" data-animation="animated bounceInUp">exit</a>
 												
 											</div>
 										</div>
@@ -177,10 +173,10 @@
 											<li data-animation="animated bounceInDown" class="slider_social_icon4"><a href="#"><i class="fa fa-bitcoin"></i></a></li>
 											<li data-animation="animated bounceInDown" class="slider_social_icon5"><a href="#"><i class="fa fa-envelope"></i></a></li>
 										</ul>
-										<h2 data-animation="animated bounceInLeft">E-sign & <br>Investment Platform</h2>
+										<h2 data-animation="animated bounceInLeft">E-sign & <br>Blockchain storage Platform</h2>
 										<div class="buttons">
-											<a href="#" class="btn1" data-animation="animated bounceInUp">WHITEPAPER</a>
-											<a href="#" class="btn2" data-animation="animated bounceInUp">Buy Tokens Now!</a>
+											<a href="http://139.196.46.139:8088/admin/index.html" class="btn1" data-animation="animated bounceInUp">IPFS storage platform</a>
+											<a href="/#" class="btn2" data-animation="animated bounceInUp">BSV storage</a>
 										</div>
 									</div>
 								</div>
@@ -213,42 +209,30 @@
 						<div class="content">
 							<div class="con">
 								<h2><img src="images/icons/1.png" alt=""><span>Bitcoin</span></h2>
-								<button class="btn3">4.160651 BTC</button>
+								<button class="btn3"><span id="livedata4"></span> USD</button>
 							</div>
+							<div>   
+                                 <script src ="js/live_info.js"></script>
+                         </div>
 						</div>
 					</div>
 					<div class="rete-list bt_title wow  fadeIn animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeIn;">
 						<div class="content">
 							<div class="con">
 								<h2><img src="images/icons/2.png" alt=""><span>Ethereum</span></h2>
-								<button class="btn3">3.245000 ETH</button>
+								<button class="btn3"><span id="livedata5"></span> USD</button>
 							</div>
 						</div>
 					</div>
 					<div class="rete-list bt_title wow  fadeIn animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeIn;">
 						<div class="content">
 							<div class="con">
-								<h2><img src="images/icons/3.png" alt=""><span>Dollar (USD)</span></h2>
-								<button class="btn3">58634.000 USD</button>
+								<h2><img src="images/icons/BSV.png" alt=""><span>Bitcoin SV</span></h2>
+								<button class="btn3"><span id="livedata6"></span> USD</button>
 							</div>
 						</div>
 					</div>
-					<div class="rete-list bt_title wow  fadeIn animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeIn;">
-						<div class="content">
-							<div class="con">
-								<h2><img src="images/icons/4.png" alt=""><span>Total USD</span></h2>
-								<button class="btn3">111969.062 USD</button>
-							</div>
-						</div>
-					</div>
-					<div class="rete-list hidden-md   wow  fadeIn animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeIn;">
-						<div class="content">
-							<div class="con">
-								<h2><img src="images/icons/5.png" alt=""><span>Token Sale</span></h2>
-								<button class="btn3">346636.775</button>
-							</div>
-						</div>
-					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -262,14 +246,13 @@
 				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 					<div class="about-content">
 						<h2 class="f-40 fw-400 wow  fadeIn animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeIn;">About The Project</h2>
-						<p class="wow  fadeIn animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeIn;">Bit Money is a lending and investment, multicurrency and multifunctional online platform based on blockchain technology. There investors and borrowers meet each other and have the opportunity to lend money on mutually beneficial.</p>
-						<p class="wow  fadeIn animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeIn;">Bit Money is a unique service that allows individuals to access loans from the comfort of their home in fiat currencies or crypto-currencies.</p>
-						<p class="wow  fadeIn animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeIn;">Bit Money is a multi-functional platform which allows each participant to keep money in a multi-currency online wallet, buy and sell currency on the exchange, invest money, get a loan in a convenient currency.</p>
-						<div class="buttons">
-							<a href="#" class="btn1">WHITEPAPER</a>
-							<a href="#" class="btn3">Buy Tokens Now!</a>
+						<p class="wow  fadeIn animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeIn;">Climate change is the UN's top priority for sustainable development.</p>
+						<p class="wow  fadeIn animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeIn;">E-sign can effectively reduce paper waste through electronic storage, thus reducing tree felling and increasing vegetation coverage.</p>
+						<p class="wow  fadeIn animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeIn;">E-sign can effectively prevent the economic loss caused by the loss of contract or IOUS through IPFS, besides.</p>
 						</div>
 					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 				</div>
 			</div>
 		</div>
@@ -312,92 +295,53 @@
 								<li>
 									<div class="col-sm-6 pd-0 hidden-xs wow  fadeIn animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeIn;">
 										<div class="contents-l mr-b30">
-											<h2>Lending</h2>
-											<p>Unique platform for lending and investment with a safety fund
-												<br>and cooperation with world-wide arbitration.</p>
+											<h2>Contract <br>template</h2>
+											<p>Varies contract templates for the appropriate scenario for the customer.
+											<br>Fill in personal details and generate customized contract forms.</p>
 											<a href="#" class="btn1">read more</a>
 										</div>
 									</div>
 									<div class="col-sm-6 pd-0 wow  fadeIn animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeIn;">
 										<div class="imgs-l">
-											<figure><img src="images/features/1.png" alt="" /></figure>
+											<figure><img src="images/features/11.png" width="500" height="500" alt="" /></figure>
 										</div>
 									</div>
-									<div class="col-sm-6 pd-0 visible-xs  wow  fadeIn animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeIn;">
-										<div class="contents-l mr-b30">
-											<h2>Lending</h2>
-											<p>Unique platform for lending and investment with a safety fund
-												<br>and cooperation with world-wide arbitration.</p>
-											<a href="#" class="btn1">read more</a>
-										</div>
-									</div>
-								</li>
 								<li class="rl">
 									<div class="col-sm-6 pd-0 floatright mr-b30 hidden-xs wow  fadeIn animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeIn;">
 										<div class="contents-r">
-											<h2>Exchange Money</h2>
-											<p>Exchange between all popular currencies with a couple of clicks.
-												<br>Instant send from one currency to another.</p>
+											<h2>I.O.U template</h2>
+											<p>Including templates of the documents involved in lending in our daily life <br>such as IOU, letter of guarantee and proof of repayment.  </p>
 											<a href="#" class="btn1">read more</a>
 										</div>
 									</div>
 									<div class="col-sm-6 pd-0 wow  fadeIn animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeIn;">
 										<div class="imgs-r">
-											<figure><img src="images/features/2.png" alt="" /></figure>
-										</div>
-									</div>
-									<div class="col-sm-6 pd-0 floatright mr-b30 visible-xs wow  fadeIn animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeIn;">
-										<div class="contents-r">
-											<h2>Exchange Money</h2>
-											<p>Exchange between all popular currencies with a couple of clicks.
-												<br>Instant send from one currency to another.</p>
-											<a href="#" class="btn1">read more</a>
+											<figure><img src="images/features/22.png" width="500" height="500"  alt="" /></figure>
 										</div>
 									</div>
 								</li>
 								<li>
 									<div class="col-sm-6 pd-0 hidden-xs wow  fadeIn animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeIn;">
 										<div class="contents-l mr-b30">
-											<h2>Investment</h2>
-											<p>Improved system of borrower's verification. Providing
-												<br>verification services for other services.</p>
+											<h2>Receipt <br>template</h2>
+											<p>Including templates of the most common used receipts in our daily life<br>such as deposit receipt, payment receipt and item etc. </p>
 											<a href="#" class="btn1">read more</a>
 										</div>
 									</div>
 									<div class="col-sm-6 pd-0 wow  fadeIn animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeIn;">
 										<div class="imgs-l">
-											<figure><img src="images/features/3.png" alt="" /></figure>
+											<figure><img src="images/features/33.png" width="500" height="500"  alt="" /></figure>
 										</div>
 									</div>
 									<div class="col-sm-6 pd-0 visible-xs wow  fadeIn animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeIn;">
 										<div class="contents-l mr-b30">
-											<h2>Investment</h2>
+											<h2>Petty Loan</h2>
 											<p>Improved system of borrower's verification. Providing
 												<br>verification services for other services.</p>
 											<a href="#" class="btn1">read more</a>
 										</div>
 									</div>
 								</li>
-								<li class="rl">
-									<div class="col-sm-6 pd-0 floatright mr-b30 hidden-xs wow  fadeIn animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeIn;">
-										<div class="contents-r">
-											<h2>Online Wallet</h2>
-											<p>Keep your money, exchange your money, invest your money, pay
-												<br>services and make purchases.</p>
-											<a href="#" class="btn1">read more</a>
-										</div>
-									</div>
-									<div class="col-sm-6 pd-0 wow  fadeIn animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeIn;">
-										<div class="imgs-r">
-											<figure><img src="images/features/4.png" alt="" /></figure>
-										</div>
-									</div>
-									<div class="col-sm-6 pd-0 floatright mr-b30 visible-xs wow  fadeIn animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeIn;">
-										<div class="contents-r">
-											<h2>Online Wallet</h2>
-											<p>Keep your money, exchange your money, invest your money, pay
-												<br>services and make purchases.</p>
-											<a href="#" class="btn1">read more</a>
 										</div>
 									</div>
 								</li>
@@ -423,7 +367,7 @@
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 					<div class="project-list wow  fadeIn animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeIn;">
 						<div class="content">
-							<span class="icons"><img src="images/icons/6.png" alt=""></span>
+							<span class="icons"><img src="images/icons/10.png" alt=""></span>
 							<h3>Blockchain <br>Technology</h3>
 						</div>
 					</div>
@@ -431,32 +375,32 @@
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 					<div class="project-list wow  fadeIn animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeIn;">
 						<div class="content">
-							<span class="icons"><img src="images/icons/7.png" alt=""></span>
-							<h3>Advanced <br>Security System</h3>
+							<span class="icons"><img src="images/icons/Higheff.png" width="100" height="100" alt=""></span>
+							<h3>High <br>Efficiency</h3>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 					<div class="project-list wow  fadeIn animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeIn;">
 						<div class="content">
-							<span class="icons"><img src="images/icons/8.png" alt=""></span>
-							<h3>Multicurrency <br>Coins</h3>
+							<span class="icons"><img src="images/icons/8.png"  alt=""></span>
+							<h3>Low signing<br>Cost</h3>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 					<div class="project-list wow  fadeIn animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeIn;">
 						<div class="content">
-							<span class="icons"><img src="images/icons/9.png" alt=""></span>
-							<h3>Internal <br>Exchange</h3>
+							<span class="icons"><img src="images/icons/7.png" alt=""></span>
+							<h3>Low signing <br>Risk</h3>
 						</div>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 					<div class="project-list wow  fadeIn animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeIn;">
 						<div class="content">
-							<span class="icons"><img src="images/icons/10.png" alt=""></span>
-							<h3>Safety <br>Fund</h3>
+							<span class="icons"><img src="images/icons/16global.png" width="100" height="100" alt=""></span>
+							<h3>Enviormental <br>Protect</h3>
 						</div>
 					</div>
 				</div>
@@ -464,7 +408,7 @@
 					<div class="project-list wow  fadeIn animated" data-wow-duration="2.4s" style="visibility: visible; animation-duration: 2.4s; animation-name: fadeIn;">
 						<div class="content">
 							<span class="icons"><img src="images/icons/11.png" alt=""></span>
-							<h3>Cooperation <br>With Arbitration</h3>
+							<h3>Contract <br>management convenient</h3>
 						</div>
 					</div>
 				</div>
@@ -479,10 +423,10 @@
 				<div class="row">
 					<div class="col-lg-11 col-md-11 col-sm-12 col-xs-12">
 						<div class="steps-heading">
-							<h2 class="wow  fadeIn animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeIn;">Few Steps For a Loan</h2>
+							<h2 class="wow  fadeIn animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeIn;">Few Steps For a Signature</h2>
 							<div class="right-con">
 								<span>Scroll Down</span>
-								<a data-scroll data-options='{ "speed": 100 }' href="#steps"><i class="fa fa-angle-down"></i></a>
+								<a data-scroll data-options='{ "speed": 100 }' href=""><i class="fa fa-angle-down"></i></a>
 							</div>
 						</div>
 					</div>
@@ -499,428 +443,52 @@
 							<li class="l-con">
 								<div class="cont wow  fadeIn animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeIn;">
 									<h2>01. Registration On The Platform</h2>
-									<p>Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur
-										<br>nulla. Cras sodales eu nibh vel scelerisque. </p>
+									<p>To register for our account, enter your account number, password, repeat password and email address. </p>
 								</div>
 								<span><i class="fa fa-users"></i></span>
 							</li>
 							<li class="r-con">
 								<div class="cont wow  fadeIn animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeIn;">
 									<h2>02. Passing Verification</h2>
-									<p>Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur
-										<br>nulla. Cras sodales eu nibh vel scelerisque. </p>
+									<p>Once you have registered you will receive an activation link in your email inbox, click on it to complete your registration. </p>
 								</div>
 								<span><i class="fa fa-check-square-o"></i></span>
 							</li>
 							<li class="l-con">
 								<div class="cont wow  fadeIn animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeIn;">
-									<h2>03. Creating An Application For a Loan</h2>
-									<p>Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur
-										<br>nulla. Cras sodales eu nibh vel scelerisque. </p>
+    									<h2>03. Creating An Application For a Contract</h2>
+									<p>Click on the signature button on the home page and you will be taken to the contract screen, where you will then be asked to enter your basic information and contract details. </p>
 								</div>
 								<span><i class="fa fa-edit "></i></span>
 								<div class="mid-icons"></div>
 							</li>
 							<li class="r-con">
 								<div class="cont wow  fadeIn animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeIn;">
-									<h2>04. Financing a Loan</h2>
-									<p>Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur
-										<br>nulla. Cras sodales eu nibh vel scelerisque. </p>
+									<h2>04. Signature</h2>
+									<p>In the signature screen you need to sign your name and the name of the other person, you can send the link to the other person to complete the signature. </p>
 								</div>
 								<span><i class="fa fa-university"></i></span>
 							</li>
 							<li class="l-con">
 								<div class="cont wow  fadeIn animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeIn;">
-									<h2>05. Activating a Loan</h2>
-									<p>Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur
-										<br>nulla. Cras sodales eu nibh vel scelerisque. </p>
+									<h2>05. Upload the Contract</h2>
+									<p>Once the contract has been generated, you will be taken to the IPFS interface where your contract will be automatically saved to our database and you can choose to upload it to IPFS (warning: uploading to IPFS risks exposing the contract and you will no longer be able to modify and delete it). </p>
 								</div>
 								<span><i class="fa fa-bell"></i></span>
 							</li>
 							<li class="r-con">
-								<div class="cont wow  fadeIn animated" data-wow-duration="2.4s" style="visibility: visible; animation-duration:2.4s; animation-name: fadeIn;">
-									<h2>06. Receiving Funds</h2>
-									<p>Nam in lectus eget nisi aliquam ultrices. Aliquam at efficitur
-										<br>nulla. Cras sodales eu nibh vel scelerisque. </p>
+								<div class="cont wow  fadeIn animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeIn;">
+									<h2>06. Save the hash value</h2>
+									<p>Save your hash value and we will save your hash to the BSV blockchain network </p>
 								</div>
-								<span><i class="fa fa-paw"></i></span>
+								<span><i class="fa fa-university"></i></span>
 							</li>
-						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<div class="sud">
-		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 181.1" style="enable-background:new 0 0 1920 181.1;" xml:space="preserve">
-			<style type="text/css">
-				.st0 {
-					fill-rule: evenodd;
-					clip-rule: evenodd;
-					fill: #10122d;
-				}
-			</style>
-			<g>
-				<path class="st0" d="M0,80c0,0,28.9-4.2,43-13c14.3-9,71-35.7,137,5c17.3,7.7,33.3,13,48,11c17.3,0.3,50.3,4.7,66,23
-				 c20.3,9.7,68,40.3,134-12c24-11,59-16.3,104,2c21,7.3,85,27.7,117-14c24-30.7,62.7-55,141-12c26,10.3,72,14.7,110-14
-				 c37.7-19,89.7-29,122,53c23,32.7,47.7,66.3,97,26c24-22.7,51-78.3,137-38c0,0,28.3,15.7,52,15c23.7-0.7,50.7,4.3,76,41
-				 c19.7,19.7,71,36.7,121-2c0,0,22.3-16,55-12c0,0,32.7,6.7,56-71c23.3-76,79-92,122-29c9.3,13.7,25,42,62,43c37,1,51.7,25.3,67,48
-				 c15.3,22.7,51,22.7,53,23v28.1H0V80z" />
-			</g>
-		</svg>
-	</div>
 </div>
-<div section-scroll='5' class="wd_scroll_wrap">
-	<section class="video-area section">
-		<div id="video-js">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="videos-heding">
-							<h2 class="wow  fadeIn animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeIn;">Development of Bit Money Platform<br>(Road Map)</h2>
-							<div class="videos-box">
-								<!---<video id="my-video" class="video-js" controls preload="auto" width="770" height="400" poster="images/video/1.png" data-setup='{ "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "https://youtu.be/Gc2en3nHxA4"}], "youtube": { "customVars": { "wmode": "transparent" } } }'>
-								</video>--->
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<div class="wd_scroll_wrap">
-		<section class="video-des bg-img ">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="deslidt">
-							<ul>
-								<li>
-									<span class="years"><span class="con">2016</span></span>
-									<div class="serials">
-										<span class="cre"></span>
-										<div class="col-sm-6 col-xs-12 left-con wow  fadeIn animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeIn;">
-											<div class="box-con">
-												<div class="dbox">
-													<div class="dleft">
-														<div class="imgs"><img src="images/video/2.png" alt="" /></div>
-													</div>
-													<div class="dright">
-														<div class="content">
-															<h3>Idea</h3>
-															<p>(September - October)</p>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-6 col-xs-12 right-con  wow  fadeIn animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeIn;">
-											<div class="box-con">
-												<div class="dbox">
-													<div class="dleft">
-														<div class="content">
-															<h3>Market Research</h3>
-															<p>(October - December)</p>
-														</div>
-													</div>
-													<div class="dright">
-														<div class="imgs"><img src="images/video/3.png" alt="" /></div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li>
-									<span class="years"><span class="con">2017</span></span>
-									<div class="serials">
-										<span class="cre"></span>
-										<div class="col-sm-6 col-xs-12 left-con wow  fadeIn animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeIn;">
-											<div class="box-con">
-												<div class="dbox">
-													<div class="dleft">
-														<div class="imgs"><img src="images/video/3.png" alt="" /></div>
-													</div>
-													<div class="dright">
-														<div class="content">
-															<p>(1Q 2017)</p>
-															<h3>Formation of foundersteam Business plan</h3>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-6 col-xs-12 right-con wow  fadeIn animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeIn;">
-											<div class="box-con">
-												<div class="dbox">
-													<div class="dleft">
-														<div class="content">
-															<p>(2Q 2017)</p>
-															<h3>Start of Platform<br> Development</h3>
-														</div>
-													</div>
-													<div class="dright">
-														<div class="imgs"><img src="images/video/4.png" alt="" /></div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="serials">
-										<span class="cre"></span>
-										<div class="col-sm-6 col-xs-12 left-con wow  fadeIn animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeIn;">
-											<div class="box-con">
-												<div class="dbox">
-													<div class="dleft">
-														<div class="imgs"><img src="images/video/5.png" alt="" /></div>
-													</div>
-													<div class="dright">
-														<div class="content">
-															<p>(3Q 2017)</p>
-															<h3>WhitePaper<br> Landing page</h3>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-6 col-xs-12 right-con wow  fadeIn animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeIn;">
-											<div class="box-con">
-												<div class="dbox">
-													<div class="dleft">
-														<div class="content">
-															<p>(4Q 2017)</p>
-															<h3>Pre-Sale<br>Launch Platform<br>in beta test mode</h3>
-														</div>
-													</div>
-													<div class="dright">
-														<div class="imgs"><img src="images/video/6.png" alt="" /></div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</li>
-								<li>
-									<span class="years"><span class="con">2018</span></span>
-									<div class="serials">
-										<span class="cre"></span>
-										<div class="col-sm-6 col-xs-12 left-con  wow  fadeIn animated" data-wow-duration="2.3s" style="visibility: visible; animation-duration: 2.3s; animation-name: fadeIn;">
-											<div class="box-con">
-												<div class="dbox">
-													<div class="dleft">
-														<div class="imgs"><img src="images/video/7.png" alt="" /></div>
-													</div>
-													<div class="dright">
-														<div class="content">
-															<p>(1Q 2018)</p>
-															<h3>ICO Launch<br>Identification<br>Systemsand work<br>with API Partners</h3>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="col-sm-6 col-xs-12 right-con wow  fadeIn animated" data-wow-duration="2.3s" style="visibility: visible; animation-duration: 2.3s; animation-name: fadeIn;">
-											<div class="box-con">
-												<div class="dbox">
-													<div class="dleft">
-														<div class="content">
-															<p>(2Q 2018)</p>
-															<h3>Launch the<br>Platform in<br>Full mode</h3>
-														</div>
-													</div>
-													<div class="dright">
-														<div class="imgs"><img src="images/video/8.png" alt="" /></div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="serials">
-										<div class="col-sm-12 col-xs-12 center-con wow  fadeIn animated" data-wow-duration="2.5s" style="visibility: visible; animation-duration: 2.5s; animation-name: fadeIn;">
-											<div class="box-con">
-												<div class="dbox">
-													<div class="dleft">
-														<div class="imgs"><img src="images/video/9.png" alt="" /></div>
-													</div>
-													<div class="dright">
-														<div class="content">
-															<p>(4Q 2018)</p>
-															<h3>Establishing<br>Representative<br>Office</h3>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-						</div>
-					</div>
-					</ul>
-				</div>
-			</div>
-	</div>
-	</section>
-	<div class="sud">
-		<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 181.1" style="enable-background:new 0 0 1920 181.1;" xml:space="preserve">
-			<style type="text/css">
-				.st0 {
-					fill-rule: evenodd;
-					clip-rule: evenodd;
-					fill: #10122d;
-				}
-			</style>
-			<g>
-				<path class="st0" d="M0,80c0,0,28.9-4.2,43-13c14.3-9,71-35.7,137,5c17.3,7.7,33.3,13,48,11c17.3,0.3,50.3,4.7,66,23
-					c20.3,9.7,68,40.3,134-12c24-11,59-16.3,104,2c21,7.3,85,27.7,117-14c24-30.7,62.7-55,141-12c26,10.3,72,14.7,110-14
-					c37.7-19,89.7-29,122,53c23,32.7,47.7,66.3,97,26c24-22.7,51-78.3,137-38c0,0,28.3,15.7,52,15c23.7-0.7,50.7,4.3,76,41
-					c19.7,19.7,71,36.7,121-2c0,0,22.3-16,55-12c0,0,32.7,6.7,56-71c23.3-76,79-92,122-29c9.3,13.7,25,42,62,43c37,1,51.7,25.3,67,48
-					c15.3,22.7,51,22.7,53,23v28.1H0V80z" />
-			</g>
-		</svg>
-	</div>
-</div>
-</div>
-<div section-scroll='6' class="wd_scroll_wrap">
-	<section class="tokens-area section">
-		<div id="token-js">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="section-heading2">
-							<h2 class="wow  fadeIn animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeIn;">Rounds of Sale of Tokens</h2>
-						</div>
-					</div>
-					<div class="col-lg-10 col-md-9 col-sm-12 col-xs-12 col-lg-offset-1 col-md-offset-1">
-						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right wow  fadeIn animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeIn;">
-							<div class="tokens mr-l50">
-								<div class="token-name">Pre-sale</div>
-								<div class="token-body">
-									<p>Target – to Raise USD 500,000</p>
-									<button class="left-btn">Price 1 BIT – $0.25</button>
-									<span class="easypiechart skill-circle">
-							 <span class="percent head-font">20</span>
-									<br>
-									<span class="con">Special Bonus</span>
-									</span>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 text-right wow  fadeIn animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeIn;">
-							<div class="tokens mr-r50">
-								<div class="token-name">ICO</div>
-								<div class="token-body">
-									<p>Target – to Raise USD 20,000,000</p>
-									<button class="right-btn">Price 1 BIT - $1.00</button>
-									<div class="prices">
-										<h3 class="f-20">Bonus for ICO :</h3>
-										<table>
-											<thead>
-												<tr>
-													<th>Time</th>
-													<th>bonus</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>1day</td>
-													<td>35%</td>
-												</tr>
-												<tr>
-													<td>2 - 4 Days </td>
-													<td>20%</td>
-												</tr>
-												<tr>
-													<td>5 - 13 Days</td>
-													<td>10%</td>
-												</tr>
-												<tr>
-													<td>14 - 31 Day</td>
-													<td>0%</td>
-												</tr>
-											</tbody>
-										</table>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
-							<p class="token-con wow  fadeIn animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeIn;">The sale of tokens It is a long established fact that a reader will be distracted by the<span> readable content of a page when looking at its layout.</span>There are many variations of passages of Lorem Ipsum available. There are many variations of passages. </p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="token-details section bg-img">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<div class="section-heading">
-						<h2 class="wow  fadeIn animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeIn;">Distribution of Tokens</h2>
-					</div>
-				</div>
-				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2">
-					<div class="tokes-chart-slider wow animate fadeIn" data-wow-duration="1s">
-						<div class="cart-list">
-							<div class="chart col-sm-6">
-								<div id="e_chart_3" class="" style="height:400px;"></div>
-								<div class="imgs"><img src="images/icons/l.png" alt="" /></div>
-							</div>
-							<div class="col-sm-6">
-								<div class="label-chatrs">
-									<div class="lsits">
-										<span class="clabels-text">85%</span>
-										<p>For participants of Pre-Sale and ICO</p>
-									</div>
-									<div class="lsits">
-										<span class="clabels-text">8%</span>
-										<p>Reserved for the team.</p>
-									</div>
-									<div class="lsits">
-										<span class="clabels-text">4%</span>
-										<p>Reserved for the consultants.</p>
-									</div>
-									<div class="lsits">
-										<span class="clabels-text">3%</span>
-										<p>Bounty campaign</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="cart-list">
-							<div class="chart col-sm-6">
-								<div id="e_chart_2" class="" style="height:400px;"></div>
-								<div class="imgs"><img src="images/icons/l.png" alt="" /></div>
-							</div>
-							<div class="col-sm-6">
-								<div class="label-chatrs">
-									<div class="lsits">
-										<span class="clabels-text">85%</span>
-										<p>For participants of Pre-Sale and ICO</p>
-									</div>
-									<div class="lsits">
-										<span class="clabels-text">8%</span>
-										<p>Reserved for the team.</p>
-									</div>
-									<div class="lsits">
-										<span class="clabels-text">4%</span>
-										<p>Reserved for the consultants.</p>
-									</div>
-									<div class="lsits">
-										<span class="clabels-text">3%</span>
-										<p>Bounty campaign</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="contents text-center">
-						<h2 class="wow  fadeIn animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeIn;">The issued tokens will be distributed as follows:</h2>
-						<a href="#" class="btn1 wow  fadeIn animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeIn;">Download WhitePaper</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 	<div class="sud">
 		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 181.1" style="enable-background:new 0 0 1920 181.1;" xml:space="preserve">
 			<style type="text/css">
@@ -955,11 +523,11 @@
 							<div class="conte">
 								<div class="dbox">
 									<div class="dleft">
-										<img src="images/team/1.png" alt="" />
+										<img src="images/team/33.jpg" width="100" height="100" alt="" />
 									</div>
 									<div class="dright">
 										<div class="content">
-											<h3>Ajay Suryavanshi</h3>
+											<h3>Erjun Sun</h3>
 											<span>(Co-Founder & CEO)</span>
 											<ul>
 												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -970,7 +538,7 @@
 									</div>
 								</div>
 								<div class="con">
-									<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
+									<p>Committed to promoting distributed systems and block chain technology, making work and life more intelligent.</p>
 								</div>
 							</div>
 						</div>
@@ -980,11 +548,11 @@
 							<div class="conte">
 								<div class="dbox">
 									<div class="dleft">
-										<img src="images/team/2.png" alt="" />
+										<img src="images/team/111.png" width="100" height="100" alt="" />
 									</div>
 									<div class="dright">
 										<div class="content">
-											<h3>Jeniffer Doe</h3>
+											<h3>Kun Huang</h3>
 											<span>(Co-Founder & CEO)</span>
 											<ul>
 												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -995,7 +563,8 @@
 									</div>
 								</div>
 								<div class="con">
-									<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.</p>
+									<p>The Internet is only a transmission of information, while the blockchain is a transmission of value. Information can be copied, but value cannot be copied.  E-sign is designed to preserve your valued information and promote work efficiency.
+</p>
 								</div>
 							</div>
 						</div>
@@ -1005,11 +574,11 @@
 							<div class="conte">
 								<div class="dbox">
 									<div class="dleft">
-										<img src="images/team/3.png" alt="" />
+										<img src="images/team/dog.png" width="100" height="100" alt="" />
 									</div>
 									<div class="dright">
 										<div class="content">
-											<h3>Akshay Handge</h3>
+											<h3>Kun Li</h3>
 											<span>(Co-Founder & CEO)</span>
 											<ul>
 												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -1020,7 +589,7 @@
 									</div>
 								</div>
 								<div class="con">
-									<p>here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</p>
+									<p>We will work hard to make E-sign the greatest fintech company.</p>
 								</div>
 							</div>
 						</div>
@@ -1030,11 +599,11 @@
 							<div class="conte">
 								<div class="dbox">
 									<div class="dleft">
-										<img src="images/team/4.png" alt="" />
+										<img src="images/team/22.gif" width="100" height="100" alt="" />
 									</div>
 									<div class="dright">
 										<div class="content">
-											<h3>Maria Willium</h3>
+											<h3>Menglin Liu</h3>
 											<span>(Co-Founder & CEO)</span>
 											<ul>
 												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -1045,7 +614,32 @@
 									</div>
 								</div>
 								<div class="con">
-									<p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. There are many variations of passages.</p>
+									<p>Blockchain is future!!!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow  fadeIn animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeIn;">
+						<div class="team-list">
+							<div class="conte">
+								<div class="dbox">
+									<div class="dleft">
+										<img src="images/team/jes.jpg" width="100" height="100" alt="" />
+									</div>
+									<div class="dright">
+										<div class="content">
+											<h3>Weiwen Jiang</h3>
+											<span>(Co-Founder & CEO)</span>
+											<ul>
+												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+												<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="con">
+									<p>E-sign is not just a product. It's our determination to make life easier and greener. Hope we can achieve this goal together.</p>
 								</div>
 							</div>
 						</div>
@@ -1054,223 +648,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="team2-area pd-t100 pd-b50 bg-img">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<div class="section-heading">
-						<h2 class="wow  fadeIn animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeIn;">Our Advisors</h2>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow  fadeIn animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeIn;">
-					<div class="team-list">
-						<div class="conte">
-							<div class="dbox">
-								<div class="dleft">
-									<img src="images/team/5.png" alt="" />
-								</div>
-								<div class="dright">
-									<div class="content">
-										<h3>Mason Liam</h3>
-										<span>(Co-Founder & CEO)</span>
-										<ul>
-											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="con">
-								<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less </p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow  fadeIn animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeIn;">
-					<div class="team-list">
-						<div class="conte">
-							<div class="dbox">
-								<div class="dleft">
-									<img src="images/team/6.png" alt="" />
-								</div>
-								<div class="dright">
-									<div class="content">
-										<h3>Jammy Doe</h3>
-										<span>(Co-Founder & CEO)</span>
-										<ul>
-											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="con">
-								<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less </p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow  fadeIn animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeIn;">
-					<div class="team-list">
-						<div class="conte">
-							<div class="dbox">
-								<div class="dleft">
-									<img src="images/team/7.png" alt="" />
-								</div>
-								<div class="dright">
-									<div class="content">
-										<h3>Daniel Matthew</h3>
-										<span>(Co-Founder & CEO)</span>
-										<ul>
-											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="con">
-								<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less </p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow  fadeIn animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeIn;">
-					<div class="team-list">
-						<div class="conte">
-							<div class="dbox">
-								<div class="dleft">
-									<img src="images/team/8.png" alt="" />
-								</div>
-								<div class="dright">
-									<div class="content">
-										<h3>Henry Jack</h3>
-										<span>(Co-Founder & CEO)</span>
-										<ul>
-											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-											<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="con">
-								<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less </p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<div class="sud">
-		<svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 181.1" style="enable-background:new 0 0 1920 181.1;" xml:space="preserve">
-			<style type="text/css">
-				.st0 {
-					fill-rule: evenodd;
-					clip-rule: evenodd;
-					fill: #1f58b1;
-				}
-			</style>
-			<g>
-				<path class="st0" d="M0,80c0,0,28.9-4.2,43-13c14.3-9,71-35.7,137,5c17.3,7.7,33.3,13,48,11c17.3,0.3,50.3,4.7,66,23
-				 c20.3,9.7,68,40.3,134-12c24-11,59-16.3,104,2c21,7.3,85,27.7,117-14c24-30.7,62.7-55,141-12c26,10.3,72,14.7,110-14
-				 c37.7-19,89.7-29,122,53c23,32.7,47.7,66.3,97,26c24-22.7,51-78.3,137-38c0,0,28.3,15.7,52,15c23.7-0.7,50.7,4.3,76,41
-				 c19.7,19.7,71,36.7,121-2c0,0,22.3-16,55-12c0,0,32.7,6.7,56-71c23.3-76,79-92,122-29c9.3,13.7,25,42,62,43c37,1,51.7,25.3,67,48
-				 c15.3,22.7,51,22.7,53,23v28.1H0V80z" />
-			</g>
-		</svg>
-	</div>
-</div>
 <div section-scroll='7' class="wd_scroll_wrap">
-	<section class="blog-area section">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<div class="section-heading2">
-						<h2 class="wow  fadeIn animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeIn;">Latest News</h2>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="blog-slider">
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="blog wow  fadeIn animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeIn;">
-							<figure><img src="images/blog/1.jpg" alt="" /></figure>
-							<div class="content">
-								<span><i class="fa  fa-calendar-o"></i>January 29, 2018</span>
-								<h4><a href="#">Report about the team's trip to the road show</a></h4>
-								<p>Nam nec tellus a odio tincidunt auctor are odio sed non mauris. This is Photoshop's ern of Lorem Ipsum Proin gravida.</p>
-								<a href="#" class="blog-btn">read more <i class="fa  fa-arrow-circle-o-right"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="blog wow  fadeIn animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeIn;">
-							<figure><img src="images/blog/2.jpg" alt="" /></figure>
-							<div class="content">
-								<span><i class="fa  fa-calendar-o"></i>January 29, 2018</span>
-								<h4><a href="#">Report about the team's trip to the road show</a></h4>
-								<p>Nam nec tellus a odio tincidunt auctor are odio sed non mauris. This is Photoshop's ern of Lorem Ipsum Proin gravida.</p>
-								<a href="#" class="blog-btn">read more <i class="fa  fa-arrow-circle-o-right"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="blog wow  fadeIn animated" data-wow-duration="1.8s" style="visibility: visible; animation-duration: 1.8s; animation-name: fadeIn;">
-							<figure><img src="images/blog/3.jpg" alt="" /></figure>
-							<div class="content">
-								<span><i class="fa  fa-calendar-o"></i>January 29, 2018</span>
-								<h4><a href="#">Report about the team's trip to the road show</a></h4>
-								<p>Nam nec tellus a odio tincidunt auctor are odio sed non mauris. This is Photoshop's ern of Lorem Ipsum Proin gravida.</p>
-								<a href="#" class="blog-btn">read more <i class="fa  fa-arrow-circle-o-right"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="blog">
-							<figure><img src="images/blog/1.jpg" alt="" /></figure>
-							<div class="content">
-								<span><i class="fa  fa-calendar-o"></i>January 29, 2018</span>
-								<h4><a href="#">Report about the team's trip to the road show</a></h4>
-								<p>Nam nec tellus a odio tincidunt auctor are odio sed non mauris. This is Photoshop's ern of Lorem Ipsum Proin gravida.</p>
-								<a href="#" class="blog-btn">read more <i class="fa  fa-arrow-circle-o-right"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="blog">
-							<figure><img src="images/blog/2.jpg" alt="" /></figure>
-							<div class="content">
-								<span><i class="fa  fa-calendar-o"></i>January 29, 2018</span>
-								<h4><a href="#">Report about the team's trip to the road show</a></h4>
-								<p>Nam nec tellus a odio tincidunt auctor are odio sed non mauris. This is Photoshop's ern of Lorem Ipsum Proin gravida.</p>
-								<a href="#" class="blog-btn">read more <i class="fa  fa-arrow-circle-o-right"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="blog">
-							<figure><img src="images/blog/3.jpg" alt="" /></figure>
-							<div class="content">
-								<span><i class="fa  fa-calendar-o"></i>January 29, 2021</span>
-								<h4><a href="#">Report about the team's trip to the road show</a></h4>
-								<p>Nam nec tellus a odio tincidunt auctor are odio sed non mauris. This is Photoshop's ern of Lorem Ipsum Proin gravida.</p>
-								<a href="#" class="blog-btn">read more <i class="fa  fa-arrow-circle-o-right"></i></a>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="view-btn">
-					<a href="#">All News</a>
-				</div>
-			</div>
-		</div>
-	</section>
 	<section class="blog-area section contt_area faq_area">
 		<div class="container">
 			<div class="row">
@@ -1288,13 +666,13 @@
 							<div class="panel panel-default sidebar_pannel">
 								<div class="panel-heading desktop">
 									<h4 class="panel-title">
-												<a data-toggle="collapse" data-parent="#accordionFifteenLeft" href="#collapseFifteenLeftone" aria-expanded="false">- We are always carefull to our patient  and service</a>
+												<a data-toggle="collapse" data-parent="#accordionFifteenLeft" href="#collapseFifteenLeftone" aria-expanded="false">- How to send the contract to the other party for signature?</a>
 											</h4>
 								</div>
 								<div id="collapseFifteenLeftone" class="panel-collapse collapse in" aria-expanded="true" role="tabpanel">
 									<div class="panel-body">
 										<div class="panel_cont">
-											<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, aks lorem quis bibendum auctor, nisi elit c nibh vulputate..</p>
+											<p>Send a link.</p>
 										</div>
 									</div>
 								</div>
@@ -1303,13 +681,13 @@
 							<div class="panel panel-default sidebar_pannel">
 								<div class="panel-heading horn">
 									<h4 class="panel-title">
-												<a class="collapsed" data-toggle="collapse" data-parent="#accordionFifteenLeft" href="#collapseFifteenLeftTwo" aria-expanded="false">- Who has access to my Health Records</a>
+												<a class="collapsed" data-toggle="collapse" data-parent="#accordionFifteenLeft" href="#collapseFifteenLeftTwo" aria-expanded="false">- How to find the files I have stored on IPFS?</a>
 											</h4>
 								</div>
 								<div id="collapseFifteenLeftTwo" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;" role="tabpanel">
 									<div class="panel-body">
 										<div class="panel_cont">
-											<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, aks lorem quis bibendum auctor, nisi elit c nibh vulputate..</p>
+											<p>By the hash value you saved.</p>
 										</div>
 									</div>
 								</div>
@@ -1318,13 +696,13 @@
 							<div class="panel panel-default sidebar_pannel">
 								<div class="panel-heading bell">
 									<h4 class="panel-title">
-												<a class="collapsed" data-toggle="collapse" data-parent="#accordionFifteenLeft" href="#collapseFifteenLeftThree" aria-expanded="false">- We are always carefull to our patient  and service</a>
+												<a class="collapsed" data-toggle="collapse" data-parent="#accordionFifteenLeft" href="#collapseFifteenLeftThree" aria-expanded="false">- How to ensure my contract is safe/valid?</a>
 											</h4>
 								</div>
 								<div id="collapseFifteenLeftThree" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;" role="tabpanel">
 									<div class="panel-body">
 										<div class="panel_cont">
-											<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, aks lorem quis bibendum auctor, nisi elit c nibh vulputate..</p>
+											<p>Subject to local laws.</p>
 										</div>
 									</div>
 								</div>
@@ -1333,13 +711,13 @@
 							<div class="panel panel-default sidebar_pannel">
 								<div class="panel-heading bell">
 									<h4 class="panel-title">
-												<a class="collapsed" data-toggle="collapse" data-parent="#accordionFifteenLeft" href="#collapseFifteenLeftFour" aria-expanded="false">- We are always carefull to our patient  and service</a>
+												<a class="collapsed" data-toggle="collapse" data-parent="#accordionFifteenLeft" href="#collapseFifteenLeftFour" aria-expanded="false">- Can I receive my signed documents?</a>
 											</h4>
 								</div>
 								<div id="collapseFifteenLeftFour" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;" role="tabpanel">
 									<div class="panel-body">
 										<div class="panel_cont">
-											<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, aks lorem quis bibendum auctor, nisi elit c nibh vulputate..</p>
+											<p>Yes. You can choose download after signing, then can receive the signed contract.</p>
 										</div>
 									</div>
 								</div>
@@ -1417,8 +795,8 @@
 										<i class="fa fa-map-marker"></i>
 									</div>
 									<div class="btc_contt_icon_cont_wrapper">
-										<p>110, B Kalani Bagh, Dewas M.P.</p>
-										<p>INDIA #455001</p>
+										<p>Ott Square,</p>
+										<p>M78 Nebula.</p>
 									</div>
 								</div>	
 								<div class="btc_contt_list_inner_wrapper btc_contt_list_inner_wrapper2">
@@ -1435,8 +813,8 @@
 										<i class="fa fa-map-marker"></i>
 									</div>
 									<div class="btc_contt_icon_cont_wrapper">
-										<p><a href="#">bitunit@example.com</a></p>
-										<p><a href="#">ico@example.com</a></p>
+										<p><a href="#">E_sign@example.com</a></p>
+										<p><a href="#">E_sign2@example.com</a></p>
 									</div>
 								</div>
 							</div>
@@ -1446,65 +824,6 @@
 			</div>
 		</div>	
 	</section>
-	<section class="media-area section bg-img jarallax">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<div class="section-heading">
-						<h2 class="wow  fadeIn animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeIn;">Press (Media)</h2>
-					</div>
-				</div>
-				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2">
-					<div class="mediabrand">
-						<ul>
-							<li class="wow  fadeIn animated" data-wow-duration="1.3s" style="visibility: visible; animation-duration: 1.3s; animation-name: fadeIn;">
-								<a href="#"><img src="images/media/1.png" alt="" /></a>
-							</li>
-							<li class="wow  fadeIn animated" data-wow-duration="1.6s" style="visibility: visible; animation-duration: 1.6s; animation-name: fadeIn;">
-								<a href="#"><img src="images/media/2.png" alt="" /></a>
-							</li>
-							<li class="wow  fadeIn animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.9s; animation-name: fadeIn;">
-								<a href="#"><img src="images/media/3.png" alt="" /></a>
-							</li>
-							<li class="wow  fadeIn animated" data-wow-duration="2.1s" style="visibility: visible; animation-duration: 2.1s; animation-name: fadeIn;">
-								<a href="#"><img src="images/media/4.png" alt="" /></a>
-							</li>
-							<li class="wow  fadeIn animated" data-wow-duration="2.4s" style="visibility: visible; animation-duration: 2.4s; animation-name: fadeIn;">
-								<a href="#"><img src="images/media/5.png" alt="" /></a>
-							</li>
-							<li class="wow  fadeIn animated" data-wow-duration="2.7s" style="visibility: visible; animation-duration: 2.7s; animation-name: fadeIn;">
-								<a href="#"><img src="images/media/6.png" alt="" /></a>
-							</li>
-							<li class="wow  fadeIn animated" data-wow-duration="2.7s" style="visibility: visible; animation-duration: 2.7s; animation-name: fadeIn;">
-								<a href="#"><img src="images/media/7.png" alt="" /></a>
-							</li>
-							<li class="wow  fadeIn animated" data-wow-duration="2.7s" style="visibility: visible; animation-duration: 2.7s; animation-name: fadeIn;">
-								<a href="#"><img src="images/media/8.png" alt="" /></a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<div class="sud">
-		<svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 181.1" style="enable-background:new 0 0 1920 181.1;" xml:space="preserve">
-			<style type="text/css">
-				.st0 {
-					fill-rule: evenodd;
-					clip-rule: evenodd;
-					fill: #1f58b1;
-				}
-			</style>
-			<g>
-				<path class="st0" d="M0,80c0,0,28.9-4.2,43-13c14.3-9,71-35.7,137,5c17.3,7.7,33.3,13,48,11c17.3,0.3,50.3,4.7,66,23
-				 c20.3,9.7,68,40.3,134-12c24-11,59-16.3,104,2c21,7.3,85,27.7,117-14c24-30.7,62.7-55,141-12c26,10.3,72,14.7,110-14
-				 c37.7-19,89.7-29,122,53c23,32.7,47.7,66.3,97,26c24-22.7,51-78.3,137-38c0,0,28.3,15.7,52,15c23.7-0.7,50.7,4.3,76,41
-				 c19.7,19.7,71,36.7,121-2c0,0,22.3-16,55-12c0,0,32.7,6.7,56-71c23.3-76,79-92,122-29c9.3,13.7,25,42,62,43c37,1,51.7,25.3,67,48
-				 c15.3,22.7,51,22.7,53,23v28.1H0V80z" />
-			</g>
-		</svg>
-	</div>
 	<!--Footer area start here-->
 	<footer class="top-foo">
 		<div id="footer-js">
@@ -1543,14 +862,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-						<div class="copyright wow  fadeIn animated" data-wow-duration="1.9s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeIn;">
-							<p>Copyright &copy; 2018.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						<div class="foo-link wow  fadeIn animated" data-wow-duration="1.0s" style="visibility: visible; animation-duration: 1.0s; animation-name: fadeIn;">
 							<ul>
-								<li><a href="#">WhitePaper</a></li>
 								<li><a href="#">Terms of Service</a></li>
 								<li><a href="#">Privacy Policy</a></li>
 							</ul>
@@ -1593,6 +906,3 @@
 <!---<script src="js/Youtube.min.js"></script>--->
 <!-- main js -->
 <script src="js/main.js"></script>
-
-</body>
-</html>

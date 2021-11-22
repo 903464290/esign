@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <link rel="stylesheet" type="text/css"
+          href="/assets/admin/layui/css/layui.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/admin/css/admin.css"/>
+    <script src="/assets/js/jquery-3.3.1.min.js"></script>
+
+</head>
+
+<body>
+<div class="page-content-wrap" id="studentSearch">
+    <div class="layui-form-item">
+        <table width="450px" class="layui-table" lay-data="{ url:'/list/getAllUploadFiles', page:true, id:'idTest',width:1200}"
+               lay-filter="demo">
+            <thead>
+            <tr>
+                <th lay-data="{field:'filename', width:250}">Contracts Name</th>
+                <th lay-data="{field:'mongodbId', width:200}">Mongo Contract ID</th>
+                <th lay-data="{field:'hash', width:362}">Contract Hash</th>
+                <th lay-data="{field:'createDtm', width:280}">Creat Time</th>      
+                <th lay-data="{fixed: 'right', width:100, align:'left', toolbar: '#barDemo'}">Download</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+    <script type="text/html" id="barDemo">
+        <a style="margin-right: 0px" class="layui-btn layui-btn-sm" lay-event="add">Download</a>
+    </script>
+</div>
+<script src="/assets/admin/layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    layui.use('table', function () {
+        var $ = layui.jquery
+        var table = layui.table;
+        table.on('checkbox(demo)', function (obj) {
+            console.log(obj)
+        });
+        table.on('tool(demo)', function (obj) {
+            var data = obj.data;
+            if (obj.event === 'detail') {
+                var detailFrom = layui.layer.open({
+                    type: 2,
+                    area: ['300px', '250px'],
+                    success: function (layero, index) {
+                        var body = layui.layer.getChildFrame('body', index);
+                        body.find("#xy_fileId").text(data.fileId);
+                        body.find("#xy_filename").text(data.filename);
+                    }
+                });
+            }
+            if (obj.event === 'add') {
+                var data = obj.data;
+                var strArr=data.filename.split("/");
+                var fileName=strArr[strArr.length-1];
+                window.open("/downloadFileForIPFS?hash="+data.hash+"&fileName="+fileName);
+        	}
+        });
+    });
+    layui.use('form', function () {
+        var form = layui.form;
+        form.render();
+    });
+
+</script>
+</body>
+
+</html>

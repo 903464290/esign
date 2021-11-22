@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>IconFont</title>
+    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="iconfont.css">
+</head>
+<body>
+    <div class="main markdown">
+        <h1>IconFont icon</h1>
+        <ul class="icon_lists clear">
+            
+                <li>
+                <i class="icon iconfont icon-shuaxin"></i>
+                    <div class="name">Refresh</div>
+                    <div class="fontclass">.icon-shuaxin</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-shujuku"></i>
+                    <div class="name">database</div>
+                    <div class="fontclass">.icon-shujuku</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-shanchu"></i>
+                    <div class="name">delete</div>
+                    <div class="fontclass">.icon-shanchu</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-wenzhang"></i>
+                    <div class="name">article</div>
+                    <div class="fontclass">.icon-wenzhang</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-lianjie"></i>
+                    <div class="name">link</div>
+                    <div class="fontclass">.icon-lianjie</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-caidan"></i>
+                    <div class="name">menu</div>
+                    <div class="fontclass">.icon-caidan</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-youjian"></i>
+                    <div class="name">mail</div>
+                    <div class="fontclass">.icon-youjian</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-tuijian"></i>
+                    <div class="name">recommend</div>
+                    <div class="fontclass">.icon-tuijian</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-msg"></i>
+                    <div class="name">comment </div>
+                    <div class="fontclass">.icon-msg</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-userpro"></i>
+                    <div class="name">head portrait</div>
+                    <div class="fontclass">.icon-userpro</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-leimulianjie"></i>
+                    <div class="name">category link</div>
+                    <div class="fontclass">.icon-leimulianjie</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-list"></i>
+                    <div class="name">list</div>
+                    <div class="fontclass">.icon-list</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-remind"></i>
+                    <div class="name">remind</div>
+                    <div class="fontclass">.icon-remind</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-Password"></i>
+                    <div class="name">password</div>
+                    <div class="fontclass">.icon-Password</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-Setup"></i>
+                    <div class="name">setup</div>
+                    <div class="fontclass">.icon-Setup</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-shangsheng"></i>
+                    <div class="name">上升</div>
+                    <div class="fontclass">.icon-shangsheng</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-fajianxiang"></i>
+                    <div class="name">Outbox</div>
+                    <div class="fontclass">.icon-fajianxiang</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-xiajiang"></i>
+                    <div class="name">rise</div>
+                    <div class="fontclass">.icon-xiajiang</div>
+                </li>
+            
+                <li>
+                <i class="icon iconfont icon-paixu"></i>
+                    <div class="name">sort</div>
+                    <div class="fontclass">.icon-paixu</div>
+                </li>
+            
+        </ul>
+
+        <h2 id="font-class-">font-class reference</h2>
+        <hr>
+
+        <p>Font-class is a variant of unicode usage, mainly to solve the problem of unintuitive writing and unclear meaning of unicode。</p>
+        <p>Compared with unicode usage, it has the following characteristics：</p>
+        <ul>
+        <li>Good compatibility, support ie8+, and all modern browsers。</li>
+        <li>Compared with unicode, the semantics are clear, and the writing is more intuitive. It’s easy to tell what this icon is。</li>
+        <li>Because the class is used to define the icon, when you want to replace the icon, you only need to modify the unicode reference in the class。</li>
+        <li>However, because the font is essentially used, multi-color icons are still not supported。</li>
+        </ul>
+        <p>The use steps are as follows：</p>
+        <h3 id="-fontclass-">Step 1: Import the fontclass code generated under the project：</h3>
+
+
+        <pre><code class="lang-js hljs javascript"><span class="hljs-comment">&lt;link rel="stylesheet" type="text/css" href="./iconfont.css"&gt;</span></code></pre>
+        <h3 id="-">Step 2: Pick the corresponding icon and get the class name, apply it to the page：</h3>
+        <pre><code class="lang-css hljs">&lt;<span class="hljs-selector-tag">i</span> <span class="hljs-selector-tag">class</span>="<span class="hljs-selector-tag">iconfont</span> <span class="hljs-selector-tag">icon-xxx</span>"&gt;&lt;/<span class="hljs-selector-tag">i</span>&gt;</code></pre>
+        <blockquote>
+        <p>"iconfont" is the font-family under your project. It can be viewed by editing the project. The default is "iconfont"。</p>
+        </blockquote>
+    </div>
+</body>
+</html>

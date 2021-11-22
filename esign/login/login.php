@@ -18,7 +18,7 @@
 	//判断是否登录后显示或跳转
 	if($num){
         echo "<script>'sucessful!';
-        location.href='person/person.html';</script>";
+        location.href='../person.html';</script>";
 	}else{
 		echo'Fail to login';
 	}

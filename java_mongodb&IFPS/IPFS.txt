@@ -1,0 +1,7 @@
+{"filename":"大数据代做.psd","hash":"QmcbmLMg4qcs3ExMSH6yMjXajY3dMgZsxc2kDgzbeDDmy2"}
+{"filename":"视频.mp4","hash":"QmSFu93FyAvA9MceVG2kHqakBQQD7UuBuSdqXmHAkgiRvL"}
+{"filename":"sqoop.txt","hash":"QmcWt97FqTi9HWDzjrbs1t6vU6EsQmR5rJtEqq3LU9HtLk"}
+{"filename":"公司信息.txt","hash":"QmWfEMnmwxXfadKPdQpw2yD2JNBSSVuVg4wzFFQpS4GvJ1"}
+{"filename":"大数据海量采集与存储方案.doc","hash":"QmTHuguVyHieigxtrw4dVdrBc5rUqMGDqHALd3s6YvHeU7"}
+{"filename":"涉及税种明细(1).docx","hash":"QmSeN6rszEwCS6KizZP6CUUCuSFE3kLb7Lovsb6N9xSWLS"}
+{"filename":"sqoop.txt","hash":"QmcWt97FqTi9HWDzjrbs1t6vU6EsQmR5rJtEqq3LU9HtLk"}

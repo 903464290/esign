@@ -1,0 +1,2 @@
+Here is the code implementation of the main E-SIGN website and other core functions, where BSV and the main web page are based on Html, handwriting verification is based on python, and IPFS is based on java. Public address in our servers: http://139.196.46.139/
+" http://139.196.46.139:8088/admin/index.html" This is the home page of our IPFS and MongoDB storage system, where you can see the contracts that have been uploaded.

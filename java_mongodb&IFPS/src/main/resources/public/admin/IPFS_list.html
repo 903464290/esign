@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <link rel="stylesheet" type="text/css"
+          href="/assets/admin/layui/css/layui.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/admin/css/admin.css"/>
+    <script src="/assets/js/jquery-3.3.1.min.js"></script>
+
+</head>
+
+<body>
+ 
+  <button type="button" class="layui-btn" style="margin-left: 800px" onclick="location.reload();">Refresh</button>
+  <div class="page-content-wrap" id="studentSearch">
+    <div class="layui-form-item">
+        <table width="450px" class="layui-table" lay-data="{ url:'/list/getAllPreUploadFiles', page:true, id:'idTest',width:904}"
+               lay-filter="demo">
+            <thead>
+            <tr>
+                <th lay-data="{field:'filename', width:500}">Contracts Name</th>
+                <th lay-data="{field:'createDtm', width:300}">Create Time</th>
+                <th lay-data="{fixed: 'right', width:100, align:'left', toolbar: '#barDemo'}">Upload</th>
+            </tr>
+            </thead>
+        </table>
+    </div>
+    <script type="text/html" id="barDemo">
+        <a style="margin-right: 0px" class="layui-btn layui-btn-sm" lay-event="add">Upload</a>
+    </script>
+</div>
+<script src="/assets/admin/layui/layui.all.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    layui.use('table', function () {
+        var $ = layui.jquery
+        var table = layui.table;
+        table.on('checkbox(demo)', function (obj) {
+            console.log(obj)
+        });
+        table.on('tool(demo)', function (obj) {
+            var data = obj.data;
+            if (obj.event === 'detail') {
+                var detailFrom = layui.layer.open({
+                    type: 2,
+                    area: ['300px', '250px'],
+                    success: function (layero, index) {
+                        var body = layui.layer.getChildFrame('body', index);
+                        body.find("#xy_fileId").text(data.fileId);
+                        body.find("#xy_filename").text(data.filename);
+                    }
+                });
+            }
+            if (obj.event === 'add') {
+				var ipfsFile = new Object();
+				ipfsFile.filename=obj.data.filename;
+				ipfsFile.md5=obj.data.md5;
+			    var jonstr=JSON.stringify(ipfsFile); 
+			    var param = JSON.parse(jonstr);						
+			    $.ajax({
+	                //Several parameters need attention
+	                    type: "POST",//Method type
+	                    dataType: "json",//The type of data that the server is expected to return
+	                    url: "/list/UploadFile",//url
+	                    data: param,
+	                    success: function (result) {	
+	                    	if (result.code == "0") {
+	                    		layui.table.reload('idTest',{page:{curr:1}});
+	                    		layer.msg('Contract has been successfully uploaded  to<br/>Mongodb and IPFS');
+			                    }else{
+			                    	layer.msg('Failed to upload file', {
+			                            icon: 5
+			                        });
+			                    }
+	                    },
+	                    error : function() {
+	                    	layer.msg('File upload failed server error', {
+	                            icon: 5
+	                        });
+	                    }
+	                });
+        	}
+        });
+    });
+    layui.use('form', function () {
+        var form = layui.form;
+        form.render();
+    });
+
+</script>
+</body>
+
+</html>
